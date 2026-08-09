@@ -1,11 +1,10 @@
-baseURL: 'https://yourname.github.io/'
+baseURL: 'https://warm-vacherin-dea21a.netlify.app/'
 languageCode: 'zh-cn'
 title: '山水禅心 | 个人空间'
 theme: 'zen'
 
 params:
   description: '静水流深，虚室生白'
-  logo: '/images/logo.png' # 后期可放入你的自定义Logo
   dateFormat: '2006-01-02'
 
 menu:
@@ -13,9 +12,6 @@ menu:
     - name: '文章博客'
       url: '/posts/'
       weight: 10
-    - name: '日常贴文'
-      url: '/notes/'
-      weight: 20
     - name: '全站公告'
       url: '/notice/'
-      weight: 30
+      weight: 20
