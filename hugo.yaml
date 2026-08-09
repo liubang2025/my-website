@@ -1,5 +1,5 @@
 baseURL: 'https://warm-vacherin-dea21a.netlify.app/'
-languageCode: 'zh-cn'
+locale: 'zh-cn'
 title: '山水禅心 | 个人空间'
 theme: 'zen'
 
@@ -7,7 +7,7 @@ params:
   description: '静水流深，虚室生白'
   dateFormat: '2006-01-02'
 
-menu:
+menus:
   main:
     - name: '文章博客'
       url: '/posts/'

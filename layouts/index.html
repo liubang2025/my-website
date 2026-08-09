@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div style="max-width: 680px; margin: 60px auto; padding: 0 20px; font-family: 'PingFang SC', 'Hiragino Sans GB', 'Noto Serif CJK SC', serif; color: #2b2b2b;">
+    <header style="border-bottom: 1px solid #eaeaea; padding-bottom: 20px; margin-bottom: 40px;">
+        <h1 style="font-weight: 300; letter-spacing: 2px;">{{ .Site.Title }}</h1>
+        <p style="color: #666; font-style: italic;">{{ .Site.Params.description }}</p>
+    </header>
+
+    <section>
+        <h2 style="font-size: 1.2rem; font-weight: 400; border-left: 3px solid #666; padding-left: 10px; margin-bottom: 20px;">最新文章</h2>
+        <ul style="list-style: none; padding: 0;">
+            {{ range where .Site.RegularPages "Type" "in" (slice "posts" "notice") }}
+            <li style="margin-bottom: 15px; display: flex; justify-content: space-between;">
+                <a href="{{ .RelPermalink }}" style="color: #333; text-decoration: none; font-size: 1.05rem;">{{ .Title }}</a>
+                <span style="color: #999; font-size: 0.85rem;">{{ .Date.Format "2006-01-02" }}</span>
+            </li>
+            {{ end }}
+        </ul>
+    </section>
+</div>
+{{ end }}
