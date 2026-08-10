@@ -1,17 +1,21 @@
 baseURL: 'https://warm-vacherin-dea21a.netlify.app/'
-locale: 'zh-cn'
+languageCode: 'zh-cn'
 title: '山水禅心 | 个人空间'
-theme: 'zen'
+theme: 'PaperMod'
 
 params:
   description: '静水流深，虚室生白'
   dateFormat: '2006-01-02'
+  # 开启极简主页展示模式
+  homeInfoParams:
+    Title: "山水禅心"
+    Content: "静水流深，虚室生白。记录生活、贴文与思考。"
 
-menus:
+menu:
   main:
-    - name: '文章博客'
-      url: '/posts/'
+    - name: "博客文章"
+      url: "/posts/"
       weight: 10
-    - name: '全站公告'
-      url: '/notice/'
+    - name: "全站公告"
+      url: "/notice/"
       weight: 20
