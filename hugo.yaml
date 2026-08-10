@@ -4,12 +4,20 @@ title: '山水禅心 | 个人空间'
 theme: 'PaperMod'
 
 params:
+  env: production
   description: '静水流深，虚室生白'
   dateFormat: '2006-01-02'
-  # 开启极简主页展示模式
+  
+  # 主页美学与布局设置
   homeInfoParams:
     Title: "山水禅心"
     Content: "静水流深，虚室生白。记录生活、贴文与思考。"
+  
+  # 开启文章阅读时长与优雅代码块
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavs: true
+  ShowCodeCopyButtons: true
 
 menu:
   main:
